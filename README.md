@@ -8,4 +8,8 @@ az login
 chmod +x setup-script.sh
 ./setup-script.sh
 ```
+Note: Azure CLI has a very simple scale command:
+# Update teh capacity to 4 VMs
+az vmss scale -g [resource-group name] -n [vmssname] –new-capacity 4
+
 reference : [nd081-c4-azure-performance-project-starter](https://github.com/udacity/nd081-c4-azure-performance-project-starter/blob/master/cloud-init.txt)
